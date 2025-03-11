@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "^4.0.12",
+    "firebase": "^11.4.0",
     "lucide-react": "^0.479.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
+    "@tailwindcss/postcss": "^4.0.12",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
