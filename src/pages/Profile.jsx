@@ -3,21 +3,20 @@
 import { useState, useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
-import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
-import { User, Mail, Save } from "lucide-react";
+import { User, Mail } from "lucide-react";
 
 const Profile = () => {
-  const { currentUser } = useAuth();
+  const { user } = useAuth(); // Ensure we're using `user`
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
   useEffect(() => {
-    if (currentUser) {
-      setName(currentUser.displayName || "");
-      setEmail(currentUser.email || "");
+    if (user) {
+      setName(user.displayName || "No Name Provided");
+      setEmail(user.email || "No Email Provided");
     }
-  }, [currentUser]);
+  }, [user]);
 
   return (
     <div className="container mx-auto px-4 py-8">
