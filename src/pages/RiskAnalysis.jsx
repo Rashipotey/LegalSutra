@@ -18,10 +18,8 @@ const RiskAnalysis = () => {
       try {
         setLoading(true)
 
-        // Simulate API call to fetch document
         await new Promise((resolve) => setTimeout(resolve, 1500))
 
-        // Mock document data
         const mockDocument = {
           id: documentId,
           title: "Employment Contract",
@@ -32,10 +30,8 @@ const RiskAnalysis = () => {
 
         setDocument(mockDocument)
 
-        // Simulate AI processing for risk analysis
         await new Promise((resolve) => setTimeout(resolve, 2000))
 
-        // Mock analysis data
         const mockAnalysis = {
           overallRiskScore: 65,
           riskCategories: [

@@ -17,10 +17,8 @@ const SummaryGeneration = () => {
       try {
         setLoading(true)
 
-        // Simulate API call to fetch document
         await new Promise((resolve) => setTimeout(resolve, 1500))
 
-        // Mock document data
         const mockDocument = {
           id: documentId,
           title: "Employment Contract",
@@ -31,10 +29,8 @@ const SummaryGeneration = () => {
 
         setDocument(mockDocument)
 
-        // Simulate AI processing for summary generation
         await new Promise((resolve) => setTimeout(resolve, 2000))
 
-        // Mock summary data
         const mockSummary = {
           keyPoints: [
             "This employment contract establishes a full-time employment relationship between the employer and employee.",

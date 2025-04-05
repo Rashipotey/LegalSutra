@@ -27,7 +27,6 @@ const DocumentUpload = () => {
       setFile(selectedFile)
       setError("")
 
-      // Auto-fill document title from filename
       const fileName = selectedFile.name.replace(".pdf", "")
       setDocumentTitle(fileName)
     }
@@ -46,7 +45,6 @@ const DocumentUpload = () => {
       setFile(droppedFile)
       setError("")
 
-      // Auto-fill document title from filename
       const fileName = droppedFile.name.replace(".pdf", "")
       setDocumentTitle(fileName)
     }
@@ -78,14 +76,9 @@ const DocumentUpload = () => {
       setUploading(true)
       setError("")
 
-      // Simulate file upload and processing
       await new Promise((resolve) => setTimeout(resolve, 2000))
 
-      // Generate a random document ID
       const documentId = generateRandomId()
-
-      // In a real app, you would upload the file to a server
-      // and then redirect to the summary page
 
       navigate(`/summary/${documentId}`)
     } catch (err) {

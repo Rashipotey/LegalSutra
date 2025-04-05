@@ -12,32 +12,29 @@ const Home = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    // Simulate fetching recent documents
     const fetchRecentDocuments = async () => {
       try {
-        // In a real app, you would fetch from an API
         await new Promise((resolve) => setTimeout(resolve, 1000))
 
-        // Mock data
         const mockDocuments = [
           {
             id: "1",
             title: "Employment Contract",
-            uploadDate: new Date(Date.now() - 86400000 * 2), // 2 days ago
+            uploadDate: new Date(Date.now() - 86400000 * 2), 
             status: "analyzed",
             riskScore: 75,
           },
           {
             id: "2",
             title: "Non-Disclosure Agreement",
-            uploadDate: new Date(Date.now() - 86400000 * 5), // 5 days ago
+            uploadDate: new Date(Date.now() - 86400000 * 5), 
             status: "analyzed",
             riskScore: 30,
           },
           {
             id: "3",
             title: "Service Agreement",
-            uploadDate: new Date(Date.now() - 86400000 * 7), // 7 days ago
+            uploadDate: new Date(Date.now() - 86400000 * 7), 
             status: "analyzed",
             riskScore: 55,
           },

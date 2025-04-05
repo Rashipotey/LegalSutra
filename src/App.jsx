@@ -37,7 +37,7 @@ function App() {
               }
             />
             <Route
-              path="/summary/:documentId"
+              path="/analysis/${doc.id}"
               element={
                 <ProtectedRoute>
                   <Navbar />
@@ -46,7 +46,7 @@ function App() {
               }
             />
             <Route
-              path="/analysis/:documentId"
+              path="/analysis/${doc.id}"
               element={
                 <ProtectedRoute>
                   <Navbar />

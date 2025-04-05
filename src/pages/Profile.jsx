@@ -7,7 +7,7 @@ import { Input } from "../components/ui/input";
 import { User, Mail } from "lucide-react";
 
 const Profile = () => {
-  const { user } = useAuth(); // Ensure we're using `user`
+  const { user } = useAuth(); 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 

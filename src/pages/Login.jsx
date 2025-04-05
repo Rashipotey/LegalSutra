@@ -39,7 +39,6 @@ const Login = () => {
         <p className="text-gray-600 mb-6">Your trusted legal companion</p>
         <h2 className="text-xl font-semibold text-gray-700 mb-4">Sign in</h2>
         
-        {/* Google Sign-In Button */}
         <button
           onClick={signInWithGoogle}
           className="w-full flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300"
